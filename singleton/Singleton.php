@@ -2,6 +2,7 @@
 class Singleton
 {
     private static $instance = null;
+
     public static function getInstance()
     {
         if (self::$instance == null) {
@@ -20,11 +21,9 @@ class Singleton
 
     }
 
-    public function do_something($str)
+    public function doSomething($str)
     {
         echo "Input string: {$str}";
     }
 
 }
-
-Singleton::getInstance()->do_something('foo bar baz');
